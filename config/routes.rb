@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   #Trenger ikke skrive controller også, rails vet det.
   # root 'application#hello'
   root 'pages#home'
+  # Get request to about page:
+  get 'about', to: 'pages#about'
 end
